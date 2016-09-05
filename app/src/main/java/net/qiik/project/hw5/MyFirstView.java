@@ -55,4 +55,16 @@ public class MyFirstView extends View {
     protected void onDraw(Canvas canvas) {
         canvas.drawCircle(getRight() / 2, getBottom() / 2, mRadius, mPaint);
     }
+
+    // определяет размеры вьюшки, нужен для расчета размера контрола
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    // определяет позицию вьюшки внутри парента, передаем положение лэйаута
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
 }
