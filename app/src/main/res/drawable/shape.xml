@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-<shape
-    android:shape="ring" android:innerRadius="0dp" android:thickness="90dp" android:useLevel="false" android:innerRadiusRatio="">
-    <solid android:color="#2d4cc6" />
 
+    <item android:drawable="@drawable/ic_checked"
+          android:state_checked="true" />
+    <item android:drawable="@drawable/ic_unchecked" />
 
-</shape>
-    </item>
-    <item>
-        <shape android:shape="ring" android:innerRadiusRatio="60dp" android:useLevel="false">
-            <solid android:color="#2d4cc6" />
-        </shape>
-    </item>
 </selector>
-
-
